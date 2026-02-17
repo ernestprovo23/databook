@@ -5,8 +5,6 @@
 
 ---
 
-## HOOK
-
 Most companies have data people. A few analysts in finance. A data engineer who maintains the warehouse. Maybe a data scientist who built a model once and now maintains dashboards. These are data people. They are not a data team.
 
 The distinction matters enormously, and almost nobody makes it.
@@ -15,9 +13,7 @@ A collection of individuals who work with data, scattered across departments, re
 
 I have spent years helping organizations figure out why their data capabilities plateau despite hiring more data people. The answer is always the same: they have staffed roles without designing a team. They have added headcount without building structure. And structure -- not headcount -- is what determines whether a data organization can operate at the level AI demands.
 
----
-
-## CORE ARGUMENT
+## The 5-Level Operations Maturity Model
 
 Let me give you a framework for thinking about this. I call it the 5-Level Operations Maturity Model. It is not about technology sophistication. It is about how an organization's data team is structured, how data flows, and what that structure enables or prevents.
 
@@ -33,13 +29,9 @@ Most AI success stories come from organizations operating at Level 3 or above. T
 
 **Level 5: AI-Native Operations.** The organization does not "use AI." AI is embedded in operational processes as a first-class participant. Decisions that can be automated are automated, with human oversight designed into the system. Data quality is measured continuously and automatically, with alerts when drift is detected. The data team's role shifts from producing analysis to designing and maintaining intelligent systems. New business processes are designed with AI integration from the start, not bolted on after. Very few organizations operate here today. But this is the direction of travel, and the organizations that reach Level 3 and 4 deliberately will get here first.
 
+## You Cannot Skip Levels
+
 Here is the hard truth: you cannot skip levels. I have watched organizations try to jump from Level 1 to Level 4 by buying a sophisticated ML platform. It does not work. Each level builds the organizational muscle for the next. You cannot maintain ML models in production (Level 4) if you cannot certify the quality of the data feeding them (Level 3). You cannot certify quality if you have not centralized and governed your data (Level 2 to 3 transition). The maturity model is sequential because each level's capabilities are prerequisites for the next.
-
----
-
-## FRAMEWORK
-
-**The 5-Level Operations Maturity Model**
 
 | Level | Team Structure | Data Access | AI Capability | Typical Company Stage |
 |---|---|---|---|---|
@@ -49,43 +41,39 @@ Here is the hard truth: you cannot skip levels. I have watched organizations try
 | **4: Integrated Decision Ops** | Data team embedded in business processes; data products managed like software with SLAs and feedback loops; dedicated MLOps function | Data products with versioning, SLAs, and quality monitoring; self-service with guardrails | Active production models with monitoring, retraining pipelines, and business feedback loops | Mature enterprises with data-informed culture and operational AI |
 | **5: AI-Native** | Data and AI teams integrated into operational design; human oversight designed into automated decision systems; continuous improvement loops | Real-time, continuously monitored, automatically quality-checked; data as a living operational asset | AI embedded in operational processes; new processes designed AI-first; compounding intelligence | Industry leaders; data-native companies; organizations 3-5 years ahead of current enterprise norm |
 
----
+## What to Do Monday Morning
 
-## TAKEAWAY
+1. **Assess your level honestly.** Gather your data team leads and one business stakeholder. Read the maturity model descriptions aloud. Ask everyone to independently write down which level they think the organization operates at. If there is disagreement -- and there almost always is -- the discussion about why they disagree is more valuable than the number. The gap between how leadership perceives data maturity and how the data team experiences it is diagnostic.
 
-**What to do Monday morning:**
+2. **Identify one Level 3 requirement you are missing and build it this quarter.** If you do not have a data dictionary, build one for your top ten datasets. If you do not have named data owners, assign them. If you do not have quality metrics, define accuracy and freshness scores for your three most critical data sources. You do not need to achieve Level 3 in a quarter. You need to make concrete, visible progress on one specific gap.
 
-- **Assess your level honestly.** Gather your data team leads and one business stakeholder. Read the maturity model descriptions aloud. Ask everyone to independently write down which level they think the organization operates at. If there is disagreement -- and there almost always is -- the discussion about why they disagree is more valuable than the number. The gap between how leadership perceives data maturity and how the data team experiences it is diagnostic.
-
-- **Identify one Level 3 requirement you are missing and build it this quarter.** If you do not have a data dictionary, build one for your top ten datasets. If you do not have named data owners, assign them. If you do not have quality metrics, define accuracy and freshness scores for your three most critical data sources. You do not need to achieve Level 3 in a quarter. You need to make concrete, visible progress on one specific gap.
-
-- **Stop hiring data scientists until you have Level 3 foundations.** This is controversial advice, and I stand by it. A data scientist without governed, certified, well-documented data spends eighty percent of their time doing data engineering and data governance work that should have been done before they were hired. Hire the governance and engineering roles first. Build the foundation. Then hire the scientists who will build on it. The ROI on data science talent increases dramatically when they can actually do data science instead of data janitorial work.
+3. **Stop hiring data scientists until you have Level 3 foundations.** This is controversial advice, and I stand by it. A data scientist without governed, certified, well-documented data spends eighty percent of their time doing data engineering and data governance work that should have been done before they were hired. Hire the governance and engineering roles first. Build the foundation. Then hire the scientists who will build on it. The ROI on data science talent increases dramatically when they can actually do data science instead of data janitorial work.
 
 ---
 
-**Book drops Q3 2026. Subscribe for early access + exclusive chapters not in the published version.** If the maturity model sparked a debate on your team about what level you are actually at, good. That debate is the beginning of organizational clarity. Forward this to the people who need to be in that conversation.
+Book drops Q3 2026. Subscribe for early access and exclusive chapters not in the published version. Every Monday and Thursday, I am serializing "Data Is The New Oil" right here -- frameworks you can use before the book even ships.
 
 ---
 
 ## X Post (publish same day)
 
-**Main post:**
+**Post:**
 "Most companies have data people. Almost none have a data team. The distinction is the difference between individuals who work with data and an organization that can build AI. You cannot build an AI strategy on a coincidence of headcount."
 
-**Reply to own post:**
-New Substack: The 5-Level Operations Maturity Model for data teams. Most enterprises are stuck between Level 2 and 3. I explain why, and what Level 3 actually looks like. Free read: [link] From "Data Is The New Oil" (Q3 2026).
+**Reply:**
+New Substack: The 5-Level Operations Maturity Model for data teams. Most enterprises are stuck between Level 2 and 3. I explain why, and what Level 3 actually looks like. Free read: [Substack link]
 
 ---
 
 ## YouTube Short Script
 
-**[HOOK - 0:00 to 0:15]**
+**[HOOK -- 0:00-0:15]**
 Most companies have data people. Analysts in finance. An engineer maintaining the warehouse. Maybe a data scientist who built one model and now maintains dashboards. That is not a data team. That is a coincidence. And you cannot build AI on a coincidence.
 
-**[BODY - 0:15 to 0:55]**
-I use a 5-level maturity model. Level 1 is ad-hoc -- spreadsheets and tribal knowledge. Level 2 is centralized storage, but everyone interprets the data differently. Level 3 is where the magic starts -- governed operations, shared definitions, named data owners, quality metrics someone is accountable for. Almost all AI success stories come from Level 3 or above. And here is the thing you cannot skip levels. I have watched companies try to jump from Level 1 to Level 4 by buying an ML platform. It never works.
+**[BODY -- 0:15-0:55]**
+I use a 5-level maturity model. Level 1 is ad-hoc -- spreadsheets and tribal knowledge. Level 2 is centralized storage, but everyone interprets the data differently. Level 3 is where the magic starts -- governed operations, shared definitions, named data owners, quality metrics someone is accountable for. Almost all AI success stories come from Level 3 or above. And here is the thing: you cannot skip levels. I have watched companies try to jump from Level 1 to Level 4 by buying an ML platform. It never works.
 
 The question is not "how many data people do we have?" It is "what level is our data organization operating at, and what specific gap is preventing us from reaching the next one?"
 
-**[CTA - 0:55 to 1:05]**
+**[CTA -- 0:55-1:05]**
 Full maturity model breakdown is on my Substack with the team structures and capabilities at each level. Link in bio. From my book "Data Is The New Oil" -- Q3 2026.
